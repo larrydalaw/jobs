@@ -1,0 +1,8 @@
+**/logs
+./.*
+setting*.*
+*.pyc
+*.log
+*.law
+*.out
+

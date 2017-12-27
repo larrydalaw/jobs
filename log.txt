@@ -1,0 +1,1267 @@
+2017-12-27 19:57:30 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: jobs)
+2017-12-27 19:57:30 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'jobs', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 3, 'LOG_FILE': './log.txt', 'NEWSPIDER_MODULE': 'jobs.spiders', 'SPIDER_MODULES': ['jobs.spiders']}
+2017-12-27 19:57:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2017-12-27 19:57:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2017-12-27 19:57:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['jobs.jsmiddlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-12-27 19:57:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-12-27 19:57:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['jobs.mysqlpipelines.pipelines.JobsPipeline']
+2017-12-27 19:57:32 [scrapy.core.engine] INFO: Spider opened
+2017-12-27 19:57:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-12-27 19:57:32 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-12-27 19:57:32 [jobspider] DEBUG: ==\\]]]
+2017-12-27 19:57:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"url": "https://www.jobs.gov.hk", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "tag name", "value": "html", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/source {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobs.gov.hk> (referer: None)
+2017-12-27 19:57:35 [jobspider] DEBUG: ==\\]]]
+2017-12-27 19:57:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"url": "http://www.jobs.gov.hk/1/0/redirect.aspx?lang=tc&link=/1/0/WebForm", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "tag name", "value": "html", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/source {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jobs.gov.hk/1/0/redirect.aspx?lang=tc&link=/1/0/WebForm> (referer: None)
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [jobspider] INFO: http://www1.jobs.gov.hk/1/0/WebForm/
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_uxSimpLocation", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375864094/name {"id": ":wdc:1514375864094", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375864094/attribute/multiple {"name": "multiple", "id": ":wdc:1514375864094", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375864094/elements {"using": "xpath", "value": ".//option[normalize-space(.) = \"--\u5168\u9999\u6e2f\u5cf6--\"]", "id": ":wdc:1514375864094", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375864095/selected {"id": ":wdc:1514375864095", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375864095/click {"id": ":wdc:1514375864095", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_uxSimSearch", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375864096/click {"id": ":wdc:1514375864096", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:47 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:47 [jobspider] DEBUG: ==\\]]]
+2017-12-27 19:57:47 [scrapy_fake_useragent.middleware] DEBUG: Assign User-Agent Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36 to Proxy None
+2017-12-27 19:57:49 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+Set-Cookie: ASP.NET_SessionId=xjq1xg55k5yuck45euhg2v45; path=/; HttpOnly
+
+Set-Cookie: LANG_OPT=2; expires=Thu, 28-Dec-2017 11:57:03 GMT; path=/; HttpOnly
+
+Set-Cookie: LANG_OPT_DESC=tc; expires=Thu, 28-Dec-2017 11:57:03 GMT; path=/; HttpOnly
+
+Set-Cookie: IESCJ=vfpvufmnoyzsegziztcyagam; expires=Thu, 28-Dec-2017 11:57:03 GMT; path=/; HttpOnly
+
+Set-Cookie: kp.egis.gov.hk=rd1o00000000000000000000ffff0a58880co80; path=/
+
+2017-12-27 19:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple> (referer: http://www1.jobs.gov.hk/1/0/WebForm/)
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_1']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869223/click {"id": ":wdc:1514375869223", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869223/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869223", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869224/text {"id": ":wdc:1514375869224", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869225/text {"id": ":wdc:1514375869225", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869225/text {"id": ":wdc:1514375869225", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869226/text {"id": ":wdc:1514375869226", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [jobspider] INFO: {'area': '港九新界',
+ 'company': '仁和工程香港有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 熟悉電力工程工作安排,需外出工作 資歷： 中五程度; 5年經驗; 良好粵語; 一般英語; 懂讀寫中文; 懂讀寫英文; '
+           '持有電工B牌優先 待遇： 每月$22,000 - $30,000, 星期一至六: 上午9時至下午6時, 每週工作6天 ',
+ 'job_id': '32-17-0037027 TN',
+ 'name': '工程主任',
+ 'salary': 22000,
+ 'vacant': '2'}
+2017-12-27 19:57:49 [jobspider] INFO: {'name': '工程主任', 'job_id': '32-17-0037027 TN', 'company': '仁和工程香港有限公司', 'detail': '職責： 熟悉電力工程工作安排,需外出工作 資歷： 中五程度; 5年經驗; 良好粵語; 一般英語; 懂讀寫中文; 懂讀寫英文; 持有電工B牌優先 待遇： 每月$22,000 - $30,000, 星期一至六: 上午9時至下午6時, 每週工作6天 ', 'industry': '', 'salary': 22000, 'area': '港九新界', 'vacant': '2', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:49 [jobspider] DEBUG: done:name:4
+2017-12-27 19:57:49 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:49 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:49 [jobspider] DEBUG: done:detail:122
+2017-12-27 19:57:49 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:49 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:49 [jobspider] DEBUG: done:area:4
+2017-12-27 19:57:49 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:49 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:49 [jobspider] INFO: save to db :32-17-0037027 TN
+2017-12-27 19:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_2']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869232/click {"id": ":wdc:1514375869232", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869232/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869232", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869233/text {"id": ":wdc:1514375869233", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869234/text {"id": ":wdc:1514375869234", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869234/text {"id": ":wdc:1514375869234", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869235/text {"id": ":wdc:1514375869235", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [jobspider] INFO: {'area': '港九新界',
+ 'company': '仁和工程香港有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 負責電力測試工作,其他電力安裝及維修, 需外出工作 資歷： 中五程度; 一般粵語; 一般普通話; 一般英語; 略懂讀寫中文; '
+           '略懂讀寫英文; 持有電機工程或屋宇裝備工程證書或以上; 有經驗優先 待遇： 每月$12,000 - $18,000, 星期一至六: '
+           '上午9時至下午6時, 每週工作6天 ',
+ 'job_id': '32-17-0037020 TN',
+ 'name': '助理電器技術員',
+ 'salary': 12000,
+ 'vacant': '3'}
+2017-12-27 19:57:50 [jobspider] INFO: {'name': '助理電器技術員', 'job_id': '32-17-0037020 TN', 'company': '仁和工程香港有限公司', 'detail': '職責： 負責電力測試工作,其他電力安裝及維修, 需外出工作 資歷： 中五程度; 一般粵語; 一般普通話; 一般英語; 略懂讀寫中文; 略懂讀寫英文; 持有電機工程或屋宇裝備工程證書或以上; 有經驗優先 待遇： 每月$12,000 - $18,000, 星期一至六: 上午9時至下午6時, 每週工作6天 ', 'industry': '', 'salary': 12000, 'area': '港九新界', 'vacant': '3', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:50 [jobspider] DEBUG: done:name:7
+2017-12-27 19:57:50 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:50 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:50 [jobspider] DEBUG: done:detail:151
+2017-12-27 19:57:50 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:50 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:50 [jobspider] DEBUG: done:area:4
+2017-12-27 19:57:50 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:50 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:50 [jobspider] INFO: save to db :32-17-0037020 TN
+2017-12-27 19:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_3']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869236/click {"id": ":wdc:1514375869236", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869236/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869236", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869237/text {"id": ":wdc:1514375869237", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869238/text {"id": ":wdc:1514375869238", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869238/text {"id": ":wdc:1514375869238", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869239/text {"id": ":wdc:1514375869239", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [jobspider] INFO: {'area': '大坑',
+ 'company': 'BUDDY BAR LIMITED',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 負責調酒，招呼客人，及店內一般工作 資歷： 中五程度; 1年經驗; 良好粵語; 良好英語; 懂讀寫中文; 略懂讀寫英文 '
+           '待遇： 每月$13,000 - $16,000, 有花紅 及小費, 下午5時半至凌晨2時半, 每週工作6天,輪休, 每天工作 9 '
+           '小時 ',
+ 'job_id': '11-17-0059062 WT',
+ 'name': '調酒員',
+ 'salary': 13000,
+ 'vacant': '1'}
+2017-12-27 19:57:51 [jobspider] INFO: {'name': '調酒員', 'job_id': '11-17-0059062 WT', 'company': 'BUDDY BAR LIMITED', 'detail': '職責： 負責調酒，招呼客人，及店內一般工作 資歷： 中五程度; 1年經驗; 良好粵語; 良好英語; 懂讀寫中文; 略懂讀寫英文 待遇： 每月$13,000 - $16,000, 有花紅 及小費, 下午5時半至凌晨2時半, 每週工作6天,輪休, 每天工作 9 小時 ', 'industry': '', 'salary': 13000, 'area': '大坑', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:51 [jobspider] DEBUG: done:name:3
+2017-12-27 19:57:51 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:51 [jobspider] DEBUG: done:company:17
+2017-12-27 19:57:51 [jobspider] DEBUG: done:detail:132
+2017-12-27 19:57:51 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:51 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:51 [jobspider] DEBUG: done:area:2
+2017-12-27 19:57:51 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:51 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:51 [jobspider] INFO: save to db :11-17-0059062 WT
+2017-12-27 19:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_4']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869240/click {"id": ":wdc:1514375869240", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869240/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869240", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869241/text {"id": ":wdc:1514375869241", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869242/text {"id": ":wdc:1514375869242", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869242/text {"id": ":wdc:1514375869242", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869243/text {"id": ":wdc:1514375869243", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [jobspider] INFO: {'area': '上環',
+ 'company': 'LUCKY SURE LIMITED',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 一般清潔 資歷： 沒有學歷要求; 誠實, 勤奮, 盡責, 即時上班優先 待遇： 每小時$60.00, 星期一至六: '
+           '上午10時至下午4時, 每週工作5天至6天, 每天工作 2 小時 ',
+ 'job_id': '13-17-0039399 CL 兼職',
+ 'name': '清潔工人',
+ 'salary': 60,
+ 'vacant': '1'}
+2017-12-27 19:57:52 [jobspider] INFO: {'name': '清潔工人', 'job_id': '13-17-0039399 CL 兼職', 'company': 'LUCKY SURE LIMITED', 'detail': '職責： 一般清潔 資歷： 沒有學歷要求; 誠實, 勤奮, 盡責, 即時上班優先 待遇： 每小時$60.00, 星期一至六: 上午10時至下午4時, 每週工作5天至6天, 每天工作 2 小時 ', 'industry': '', 'salary': 60, 'area': '上環', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:52 [jobspider] DEBUG: done:name:4
+2017-12-27 19:57:52 [jobspider] DEBUG: done:job_id:19
+2017-12-27 19:57:52 [jobspider] DEBUG: done:company:18
+2017-12-27 19:57:52 [jobspider] DEBUG: done:detail:95
+2017-12-27 19:57:52 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:52 [jobspider] DEBUG: done:salary:2
+2017-12-27 19:57:52 [jobspider] DEBUG: done:area:2
+2017-12-27 19:57:52 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:52 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:52 [jobspider] INFO: save to db :13-17-0039399 CL 兼職
+2017-12-27 19:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_5']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869244/click {"id": ":wdc:1514375869244", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869244/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869244", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869245/text {"id": ":wdc:1514375869245", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869246/text {"id": ":wdc:1514375869246", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869246/text {"id": ":wdc:1514375869246", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869247/text {"id": ":wdc:1514375869247", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [jobspider] INFO: {'area': '堅尼地城',
+ 'company': 'FOR PAWS',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 協助美容師處理寵物美容 資歷： 沒有學歷要求; 6個月經驗; 一般粵語; 一般普通話; 一般英語 待遇： 每月$9,000 '
+           '- $11,000, 有每月勤工獎金$500, 在職培訓 及醫療保險, 星期四至二: 上午11時至下午8時, 每週工作5天至6天, '
+           '每天工作 9 小時 ',
+ 'job_id': '13-17-0039323 MI',
+ 'name': '初級寵物美容師/助理',
+ 'salary': 9000,
+ 'vacant': '1'}
+2017-12-27 19:57:52 [jobspider] INFO: {'name': '初級寵物美容師/助理', 'job_id': '13-17-0039323 MI', 'company': 'FOR PAWS', 'detail': '職責： 協助美容師處理寵物美容 資歷： 沒有學歷要求; 6個月經驗; 一般粵語; 一般普通話; 一般英語 待遇： 每月$9,000 - $11,000, 有每月勤工獎金$500, 在職培訓 及醫療保險, 星期四至二: 上午11時至下午8時, 每週工作5天至6天, 每天工作 9 小時 ', 'industry': '', 'salary': 9000, 'area': '堅尼地城', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:52 [jobspider] DEBUG: done:name:10
+2017-12-27 19:57:52 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:52 [jobspider] DEBUG: done:company:8
+2017-12-27 19:57:52 [jobspider] DEBUG: done:detail:142
+2017-12-27 19:57:52 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:52 [jobspider] DEBUG: done:salary:4
+2017-12-27 19:57:52 [jobspider] DEBUG: done:area:4
+2017-12-27 19:57:52 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:52 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:52 [jobspider] INFO: save to db :13-17-0039323 MI
+2017-12-27 19:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_6']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869248/click {"id": ":wdc:1514375869248", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869248/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869248", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869249/text {"id": ":wdc:1514375869249", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869250/text {"id": ":wdc:1514375869250", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869250/text {"id": ":wdc:1514375869250", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869251/text {"id": ":wdc:1514375869251", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [jobspider] INFO: {'area': '堅尼地城',
+ 'company': '五斗米',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 打荷，洗碗，切菜 資歷： 沒有學歷要求 待遇： 每小時$60.00 - $65.00, 有供膳食, 超時工作津貼 '
+           '及晉升機會, 星期一至六: 下午5時至下午11時, 每週工作6天, 每天工作 6 小時 ',
+ 'job_id': '13-17-0039297 CO',
+ 'name': '廚房助理**',
+ 'salary': 60,
+ 'vacant': '1'}
+2017-12-27 19:57:53 [jobspider] INFO: {'name': '廚房助理**', 'job_id': '13-17-0039297 CO', 'company': '五斗米', 'detail': '職責： 打荷，洗碗，切菜 資歷： 沒有學歷要求 待遇： 每小時$60.00 - $65.00, 有供膳食, 超時工作津貼 及晉升機會, 星期一至六: 下午5時至下午11時, 每週工作6天, 每天工作 6 小時 ', 'industry': '', 'salary': 60, 'area': '堅尼地城', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:53 [jobspider] DEBUG: done:name:6
+2017-12-27 19:57:53 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:53 [jobspider] DEBUG: done:company:3
+2017-12-27 19:57:53 [jobspider] DEBUG: done:detail:105
+2017-12-27 19:57:53 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:53 [jobspider] DEBUG: done:salary:2
+2017-12-27 19:57:53 [jobspider] DEBUG: done:area:4
+2017-12-27 19:57:53 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:53 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:53 [jobspider] INFO: save to db :13-17-0039297 CO
+2017-12-27 19:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_7']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869252/click {"id": ":wdc:1514375869252", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869252/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869252", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869253/text {"id": ":wdc:1514375869253", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869254/text {"id": ":wdc:1514375869254", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869254/text {"id": ":wdc:1514375869254", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869255/text {"id": ":wdc:1514375869255", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [jobspider] INFO: {'area': '西營盤',
+ 'company': '北大荒米業有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 準備日常會計事宜, 數據輸入, 文件歸檔和檢查, 協助處理全部賬目, 包括總帳, 應收賬款, 應付賬款和月末結算, '
+           '執行一般會計職責並準備每月報告表, 負責日常銀行交易和對賬, 維持小額現金, 執行分配的其他特別職務 資歷： '
+           '專上教育：文憑/證書課程; 2年經驗; 一般粵語; 一般普通話; 一般英語; 懂讀寫中文; 懂讀寫英文 待遇： 每月$13,000 '
+           '- $14,000, 有銀行假期, 花紅 及雙糧, 星期一至五: 上午9時至下午5時半及星期六: 上午9時至下午1時, '
+           '每週工作5天半, 每天工作 7.5 小時 ',
+ 'job_id': '13-17-0039447 AC',
+ 'name': '高級會計/簿記文員',
+ 'salary': 13000,
+ 'vacant': '1'}
+2017-12-27 19:57:54 [jobspider] INFO: {'name': '高級會計/簿記文員', 'job_id': '13-17-0039447 AC', 'company': '北大荒米業有限公司', 'detail': '職責： 準備日常會計事宜, 數據輸入, 文件歸檔和檢查, 協助處理全部賬目, 包括總帳, 應收賬款, 應付賬款和月末結算, 執行一般會計職責並準備每月報告表, 負責日常銀行交易和對賬, 維持小額現金, 執行分配的其他特別職務 資歷： 專上教育：文憑/證書課程; 2年經驗; 一般粵語; 一般普通話; 一般英語; 懂讀寫中文; 懂讀寫英文 待遇： 每月$13,000 - $14,000, 有銀行假期, 花紅 及雙糧, 星期一至五: 上午9時至下午5時半及星期六: 上午9時至下午1時, 每週工作5天半, 每天工作 7.5 小時 ', 'industry': '', 'salary': 13000, 'area': '西營盤', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:54 [jobspider] DEBUG: done:name:9
+2017-12-27 19:57:54 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:54 [jobspider] DEBUG: done:company:9
+2017-12-27 19:57:54 [jobspider] DEBUG: done:detail:264
+2017-12-27 19:57:54 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:54 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:54 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:54 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:54 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:54 [jobspider] INFO: save to db :13-17-0039447 AC
+2017-12-27 19:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_8']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869256/click {"id": ":wdc:1514375869256", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869256/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869256", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869257/text {"id": ":wdc:1514375869257", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869258/text {"id": ":wdc:1514375869258", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869258/text {"id": ":wdc:1514375869258", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869259/text {"id": ":wdc:1514375869259", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [jobspider] INFO: {'area': '西營盤',
+ 'company': '北大荒米業有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 負責全套船務文件, 與廠及貨代聯絡出貨事宜 資歷： 專上教育：文憑/證書課程; 2年經驗; 良好粵語; 良好普通話; '
+           '良好英語; 懂讀寫中文; 懂讀寫英文 待遇： 每月$13,000 - $14,000, 有雙糧, 星期一至五: '
+           '上午9時至下午5時半及星期六: 上午9時至下午1時, 每週工作5天半, 每天工作 7.5 小時 ',
+ 'job_id': '13-17-0039437 CK',
+ 'name': '船務文員',
+ 'salary': 13000,
+ 'vacant': '1'}
+2017-12-27 19:57:54 [jobspider] INFO: {'name': '船務文員', 'job_id': '13-17-0039437 CK', 'company': '北大荒米業有限公司', 'detail': '職責： 負責全套船務文件, 與廠及貨代聯絡出貨事宜 資歷： 專上教育：文憑/證書課程; 2年經驗; 良好粵語; 良好普通話; 良好英語; 懂讀寫中文; 懂讀寫英文 待遇： 每月$13,000 - $14,000, 有雙糧, 星期一至五: 上午9時至下午5時半及星期六: 上午9時至下午1時, 每週工作5天半, 每天工作 7.5 小時 ', 'industry': '', 'salary': 13000, 'area': '西營盤', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:54 [jobspider] DEBUG: done:name:4
+2017-12-27 19:57:54 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:54 [jobspider] DEBUG: done:company:9
+2017-12-27 19:57:54 [jobspider] DEBUG: done:detail:167
+2017-12-27 19:57:54 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:54 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:54 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:54 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:54 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:54 [jobspider] INFO: save to db :13-17-0039437 CK
+2017-12-27 19:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_9']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869260/click {"id": ":wdc:1514375869260", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869260/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869260", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869261/text {"id": ":wdc:1514375869261", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869262/text {"id": ":wdc:1514375869262", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869262/text {"id": ":wdc:1514375869262", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869263/text {"id": ":wdc:1514375869263", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [jobspider] INFO: {'area': '上環',
+ 'company': '珠江客運有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 負責裝卸吊運行李, 船纜掛接及其他碼頭事務 (郵寄地址:香港干諾道中143號珠江船務大廈22樓) 資歷： 中三程度; '
+           '良好粵語; 一般普通話; 一般英語; 懂讀寫中文 待遇： 每月$10,000 - $11,000, 有雙糧 及返工每日$30補貼, '
+           '上午7時至下午11時, 每週工作6天, 每天工作 9 小時, 輪班, 輪休 ',
+ 'job_id': '13-17-0039427 LA',
+ 'name': '港澳碼頭操作員**',
+ 'salary': 10000,
+ 'vacant': '3'}
+2017-12-27 19:57:55 [jobspider] INFO: {'name': '港澳碼頭操作員**', 'job_id': '13-17-0039427 LA', 'company': '珠江客運有限公司', 'detail': '職責： 負責裝卸吊運行李, 船纜掛接及其他碼頭事務 (郵寄地址:香港干諾道中143號珠江船務大廈22樓) 資歷： 中三程度; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文 待遇： 每月$10,000 - $11,000, 有雙糧 及返工每日$30補貼, 上午7時至下午11時, 每週工作6天, 每天工作 9 小時, 輪班, 輪休 ', 'industry': '', 'salary': 10000, 'area': '上環', 'vacant': '3', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:55 [jobspider] DEBUG: done:name:9
+2017-12-27 19:57:55 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:55 [jobspider] DEBUG: done:company:8
+2017-12-27 19:57:55 [jobspider] DEBUG: done:detail:167
+2017-12-27 19:57:55 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:55 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:55 [jobspider] DEBUG: done:area:2
+2017-12-27 19:57:55 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:55 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:55 [jobspider] INFO: save to db :13-17-0039427 LA
+2017-12-27 19:57:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_10']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869264/click {"id": ":wdc:1514375869264", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869264/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869264", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869265/text {"id": ":wdc:1514375869265", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869266/text {"id": ":wdc:1514375869266", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869266/text {"id": ":wdc:1514375869266", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869267/text {"id": ":wdc:1514375869267", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [jobspider] INFO: {'area': '鴨脷洲',
+ 'company': '中原地產代理有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 輔助處理地產樓盤資料,跟進銀行按揭,安排預約海外樓盤 資歷： 中五程度; 一般粵語; 略懂讀寫中文; 略懂讀寫英文 待遇： '
+           '每小時$35.00 - $60.00(視乎經驗而定), 有佣金, 醫療福利 及表現獎金, 上午9時半至下午7時半, '
+           '每週工作5天至6天,輪休, 每天工作 8 - 9 小時 ',
+ 'job_id': '13-17-0039423 SA',
+ 'name': '見習營業員**',
+ 'salary': 35,
+ 'vacant': '4'}
+2017-12-27 19:57:56 [jobspider] INFO: {'name': '見習營業員**', 'job_id': '13-17-0039423 SA', 'company': '中原地產代理有限公司', 'detail': '職責： 輔助處理地產樓盤資料,跟進銀行按揭,安排預約海外樓盤 資歷： 中五程度; 一般粵語; 略懂讀寫中文; 略懂讀寫英文 待遇： 每小時$35.00 - $60.00(視乎經驗而定), 有佣金, 醫療福利 及表現獎金, 上午9時半至下午7時半, 每週工作5天至6天,輪休, 每天工作 8 - 9 小時 ', 'industry': '', 'salary': 35, 'area': '鴨脷洲', 'vacant': '4', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:56 [jobspider] DEBUG: done:name:7
+2017-12-27 19:57:56 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:56 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:56 [jobspider] DEBUG: done:detail:152
+2017-12-27 19:57:56 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:56 [jobspider] DEBUG: done:salary:2
+2017-12-27 19:57:56 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:56 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:56 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:56 [jobspider] INFO: save to db :13-17-0039423 SA
+2017-12-27 19:57:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_11']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869268/click {"id": ":wdc:1514375869268", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869268/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869268", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869269/text {"id": ":wdc:1514375869269", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869270/text {"id": ":wdc:1514375869270", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869270/text {"id": ":wdc:1514375869270", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869271/text {"id": ":wdc:1514375869271", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [jobspider] INFO: {'area': '上環',
+ 'company': '香港康元會計師事務所',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 一般核數文員工作 資歷： 專上教育：副學位課程; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文; 懂讀寫英文; '
+           'Student of AAT 待遇： 每月$8,000 - $10,000, 星期一至五: 上午9時至下午6時, 每週工作5天 ',
+ 'job_id': '13-17-0039421 AC',
+ 'name': '核數文員',
+ 'salary': 8000,
+ 'vacant': '2'}
+2017-12-27 19:57:56 [jobspider] INFO: {'name': '核數文員', 'job_id': '13-17-0039421 AC', 'company': '香港康元會計師事務所', 'detail': '職責： 一般核數文員工作 資歷： 專上教育：副學位課程; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文; 懂讀寫英文; Student of AAT 待遇： 每月$8,000 - $10,000, 星期一至五: 上午9時至下午6時, 每週工作5天 ', 'industry': '', 'salary': 8000, 'area': '上環', 'vacant': '2', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:56 [jobspider] DEBUG: done:name:4
+2017-12-27 19:57:56 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:56 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:56 [jobspider] DEBUG: done:detail:126
+2017-12-27 19:57:56 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:56 [jobspider] DEBUG: done:salary:4
+2017-12-27 19:57:56 [jobspider] DEBUG: done:area:2
+2017-12-27 19:57:56 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:56 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:56 [jobspider] INFO: save to db :13-17-0039421 AC
+2017-12-27 19:57:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_12']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869272/click {"id": ":wdc:1514375869272", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869272/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869272", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869273/text {"id": ":wdc:1514375869273", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869274/text {"id": ":wdc:1514375869274", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869274/text {"id": ":wdc:1514375869274", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869275/text {"id": ":wdc:1514375869275", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [jobspider] INFO: {'area': '鴨脷洲',
+ 'company': '綠悠軒',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 砧板工作，廚房雜務，出品工作 資歷： 沒有學歷要求; 一般粵語; 略懂讀寫中文 待遇： 每月$14,000 - '
+           '$19,000, 星期二至日: 上午11時半至下午10時, 每週工作6天, 每天工作 10 小時 ',
+ 'job_id': '13-17-0039419 CO',
+ 'name': '中式廚師/見習學徒**',
+ 'salary': 14000,
+ 'vacant': '2'}
+2017-12-27 19:57:57 [jobspider] INFO: {'name': '中式廚師/見習學徒**', 'job_id': '13-17-0039419 CO', 'company': '綠悠軒', 'detail': '職責： 砧板工作，廚房雜務，出品工作 資歷： 沒有學歷要求; 一般粵語; 略懂讀寫中文 待遇： 每月$14,000 - $19,000, 星期二至日: 上午11時半至下午10時, 每週工作6天, 每天工作 10 小時 ', 'industry': '', 'salary': 14000, 'area': '鴨脷洲', 'vacant': '2', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:57 [jobspider] DEBUG: done:name:11
+2017-12-27 19:57:57 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:57 [jobspider] DEBUG: done:company:3
+2017-12-27 19:57:57 [jobspider] DEBUG: done:detail:109
+2017-12-27 19:57:57 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:57 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:57 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:57 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:57 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:57 [jobspider] INFO: save to db :13-17-0039419 CO
+2017-12-27 19:57:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_13']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869276/click {"id": ":wdc:1514375869276", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869276/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869276", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869277/text {"id": ":wdc:1514375869277", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869278/text {"id": ":wdc:1514375869278", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869278/text {"id": ":wdc:1514375869278", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869279/text {"id": ":wdc:1514375869279", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [jobspider] INFO: {'area': '薄扶林',
+ 'company': '保良局薄扶林復康中心',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 為智障人士提供日常照顧,護理及中心環境清潔 資歷： 小六程度; 良好粵語; 懂讀寫中文 待遇： 每月$11,990, '
+           '有年假12天, 公眾假期(輪休), 膳食及醫療津貼, 上午8時至下午4時半或上午10時至下午6時半, '
+           '每週工作6天(48小時),輪班,輪休, 每天工作 8.5小時 ',
+ 'job_id': '13-17-0039416 LA',
+ 'name': '庶務員(學員照顧)',
+ 'salary': 11990,
+ 'vacant': '1'}
+2017-12-27 19:57:58 [jobspider] INFO: {'name': '庶務員(學員照顧)', 'job_id': '13-17-0039416 LA', 'company': '保良局薄扶林復康中心', 'detail': '職責： 為智障人士提供日常照顧,護理及中心環境清潔 資歷： 小六程度; 良好粵語; 懂讀寫中文 待遇： 每月$11,990, 有年假12天, 公眾假期(輪休), 膳食及醫療津貼, 上午8時至下午4時半或上午10時至下午6時半, 每週工作6天(48小時),輪班,輪休, 每天工作 8.5小時 ', 'industry': '', 'salary': 11990, 'area': '薄扶林', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:58 [jobspider] DEBUG: done:name:9
+2017-12-27 19:57:58 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:58 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:58 [jobspider] DEBUG: done:detail:145
+2017-12-27 19:57:58 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:58 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:58 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:58 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:58 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:58 [jobspider] INFO: save to db :13-17-0039416 LA
+2017-12-27 19:57:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_14']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869280/click {"id": ":wdc:1514375869280", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869280/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869280", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869281/text {"id": ":wdc:1514375869281", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869282/text {"id": ":wdc:1514375869282", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869282/text {"id": ":wdc:1514375869282", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869283/text {"id": ":wdc:1514375869283", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [jobspider] INFO: {'area': '薄扶林',
+ 'company': '保良局薄扶林復康中心',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 為智障成人提供個人護理照顧服務,訓練及維持中心環境清潔和衛生 (有每月特別津貼$1300, '
+           '做滿12個月而表現良好,有獎勵金$4000) 資歷： 小六程度; 良好粵語; 懂讀寫中文; '
+           '持認可起居照顧員證書或相關經驗優先,有照顧智障人士經驗優先; 具愛心及耐性 待遇： 每月$13,850或以上(視乎經驗而定), '
+           '有年假12天, 公眾假期(輪休), 醫療津貼, 膳食津貼, 每月長夜津貼$700, 7AM-4:30PM/ '
+           '8AM-6PM/12:30PM-10PM/ 8:30PM-7:30AM, '
+           '每週工作5天至6天(48小時,另有3小時有薪飯鐘),輪班,輪休 ',
+ 'job_id': '13-17-0039415 MI',
+ 'name': '護理員II',
+ 'salary': 13850,
+ 'vacant': '4'}
+2017-12-27 19:57:58 [jobspider] INFO: {'name': '護理員II', 'job_id': '13-17-0039415 MI', 'company': '保良局薄扶林復康中心', 'detail': '職責： 為智障成人提供個人護理照顧服務,訓練及維持中心環境清潔和衛生 (有每月特別津貼$1300, 做滿12個月而表現良好,有獎勵金$4000) 資歷： 小六程度; 良好粵語; 懂讀寫中文; 持認可起居照顧員證書或相關經驗優先,有照顧智障人士經驗優先; 具愛心及耐性 待遇： 每月$13,850或以上(視乎經驗而定), 有年假12天, 公眾假期(輪休), 醫療津貼, 膳食津貼, 每月長夜津貼$700, 7AM-4:30PM/ 8AM-6PM/12:30PM-10PM/ 8:30PM-7:30AM, 每週工作5天至6天(48小時,另有3小時有薪飯鐘),輪班,輪休 ', 'industry': '', 'salary': 13850, 'area': '薄扶林', 'vacant': '4', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:58 [jobspider] DEBUG: done:name:5
+2017-12-27 19:57:58 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:58 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:58 [jobspider] DEBUG: done:detail:283
+2017-12-27 19:57:58 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:58 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:58 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:58 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:58 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:58 [jobspider] INFO: save to db :13-17-0039415 MI
+2017-12-27 19:57:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_15']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869284/click {"id": ":wdc:1514375869284", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869284/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869284", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869285/text {"id": ":wdc:1514375869285", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869286/text {"id": ":wdc:1514375869286", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869286/text {"id": ":wdc:1514375869286", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869287/text {"id": ":wdc:1514375869287", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [jobspider] INFO: {'area': '薄扶林',
+ 'company': '保良局薄扶林復康中心',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 照顧嚴重智障人士健康, 負責預備, 核對和派發藥物, 處理傷口或不適等 (每週工作5.5天(44小時)) 資歷： 中三程度; '
+           '良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 持有保健員註冊證; 持有急救證書; '
+           '具愛心,責任感及耐性,已修讀殘疾人士院舍保健員銜接課程;具相關照顧智障人士經驗優先 待遇： 每月$13,580或以上, '
+           '有做滿12個月而表現良好,可獲發$4000獎勵金, '
+           '7AM-3PM/9AM-5PM/10AM-6PM/1PM-9PM/1:30PM-11:30AM(9:30PM-6:30AM候命當值,工時共計16小時),輪班,輪休 ',
+ 'job_id': '13-17-0039414 MI',
+ 'name': '保健員 II',
+ 'salary': 13580,
+ 'vacant': '1'}
+2017-12-27 19:57:59 [jobspider] INFO: {'name': '保健員 II', 'job_id': '13-17-0039414 MI', 'company': '保良局薄扶林復康中心', 'detail': '職責： 照顧嚴重智障人士健康, 負責預備, 核對和派發藥物, 處理傷口或不適等 (每週工作5.5天(44小時)) 資歷： 中三程度; 良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 持有保健員註冊證; 持有急救證書; 具愛心,責任感及耐性,已修讀殘疾人士院舍保健員銜接課程;具相關照顧智障人士經驗優先 待遇： 每月$13,580或以上, 有做滿12個月而表現良好,可獲發$4000獎勵金, 7AM-3PM/9AM-5PM/10AM-6PM/1PM-9PM/1:30PM-11:30AM(9:30PM-6:30AM候命當值,工時共計16小時),輪班,輪休 ', 'industry': '', 'salary': 13580, 'area': '薄扶林', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:57:59 [jobspider] DEBUG: done:name:6
+2017-12-27 19:57:59 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:57:59 [jobspider] DEBUG: done:company:10
+2017-12-27 19:57:59 [jobspider] DEBUG: done:detail:279
+2017-12-27 19:57:59 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:57:59 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:57:59 [jobspider] DEBUG: done:area:3
+2017-12-27 19:57:59 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:57:59 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:57:59 [jobspider] INFO: save to db :13-17-0039414 MI
+2017-12-27 19:57:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_16']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:57:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869288/click {"id": ":wdc:1514375869288", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869288/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869288", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869289/text {"id": ":wdc:1514375869289", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869290/text {"id": ":wdc:1514375869290", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869290/text {"id": ":wdc:1514375869290", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869291/text {"id": ":wdc:1514375869291", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [jobspider] INFO: {'area': '薄扶林',
+ 'company': '保良局薄扶林復康中心',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 照顧嚴重智障人士健康, 負責預備, 核對和派發藥物, 處理傷口或不適等(香港會考證書5科合格(包括中, '
+           '英文科)/香港中學文憑5科獲2級/達標/E級(包括中, 英文科),每週工作5.5天(44小時)) 資歷： 中五程度; 良好粵語; '
+           '一般英語; 懂讀寫中文; 懂閱讀英文; 持有保健員註冊證; 持有急救證書; '
+           '具愛心,責任感及耐性,已修讀殘疾人士院舍保健員銜接課程;具相關照顧智障人士經驗優先 待遇： 每月$14,430或以上, '
+           '有做滿12個月而表現良好,可獲發$4000獎勵金, '
+           '7AM-3PM/9AM-5PM/10AM-6PM/1PM-9PM/1:30PM-11:30AM(9:30PM-6:30AM候命當值,工時共計16小時),輪班,輪休 ',
+ 'job_id': '13-17-0039413 MI',
+ 'name': '保健員 I',
+ 'salary': 14430,
+ 'vacant': '1'}
+2017-12-27 19:58:00 [jobspider] INFO: {'name': '保健員 I', 'job_id': '13-17-0039413 MI', 'company': '保良局薄扶林復康中心', 'detail': '職責： 照顧嚴重智障人士健康, 負責預備, 核對和派發藥物, 處理傷口或不適等(香港會考證書5科合格(包括中, 英文科)/香港中學文憑5科獲2級/達標/E級(包括中, 英文科),每週工作5.5天(44小時)) 資歷： 中五程度; 良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 持有保健員註冊證; 持有急救證書; 具愛心,責任感及耐性,已修讀殘疾人士院舍保健員銜接課程;具相關照顧智障人士經驗優先 待遇： 每月$14,430或以上, 有做滿12個月而表現良好,可獲發$4000獎勵金, 7AM-3PM/9AM-5PM/10AM-6PM/1PM-9PM/1:30PM-11:30AM(9:30PM-6:30AM候命當值,工時共計16小時),輪班,輪休 ', 'industry': '', 'salary': 14430, 'area': '薄扶林', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:58:00 [jobspider] DEBUG: done:name:5
+2017-12-27 19:58:00 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:58:00 [jobspider] DEBUG: done:company:10
+2017-12-27 19:58:00 [jobspider] DEBUG: done:detail:327
+2017-12-27 19:58:00 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:58:00 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:58:00 [jobspider] DEBUG: done:area:3
+2017-12-27 19:58:00 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:58:00 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:58:00 [jobspider] INFO: save to db :13-17-0039413 MI
+2017-12-27 19:58:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_17']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869292/click {"id": ":wdc:1514375869292", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869292/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869292", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869293/text {"id": ":wdc:1514375869293", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869294/text {"id": ":wdc:1514375869294", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869294/text {"id": ":wdc:1514375869294", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869295/text {"id": ":wdc:1514375869295", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [jobspider] INFO: {'area': '田灣',
+ 'company': '達明牆紙有限公司',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 負責數碼印刷工作; 跟進製作流程及生產質素; 檢查客戶檔案, 修改稿件 資歷： 中五程度; 良好粵語; 一般普通話; '
+           '一般英語; 懂讀寫中文; 懂讀寫英文; 懂PhotoShop; 懂Illustrator; 工作主動, 勤奮, '
+           '熟悉操作及懂運用Mac 的軟件, 能在壓力下工作及有解決問題技巧 待遇： 每月$12,000 - $14,000, 有公眾假期, '
+           '醫療津貼, 雙糧 及員工購物優惠, 星期一至五: 上午9時至下午6時及星期六: 上午9時至下午1時, 每週工作5天半 ',
+ 'job_id': '13-17-0039411 PO',
+ 'name': '印刷技術員',
+ 'salary': 12000,
+ 'vacant': '1'}
+2017-12-27 19:58:02 [jobspider] INFO: {'name': '印刷技術員', 'job_id': '13-17-0039411 PO', 'company': '達明牆紙有限公司', 'detail': '職責： 負責數碼印刷工作; 跟進製作流程及生產質素; 檢查客戶檔案, 修改稿件 資歷： 中五程度; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文; 懂讀寫英文; 懂PhotoShop; 懂Illustrator; 工作主動, 勤奮, 熟悉操作及懂運用Mac 的軟件, 能在壓力下工作及有解決問題技巧 待遇： 每月$12,000 - $14,000, 有公眾假期, 醫療津貼, 雙糧 及員工購物優惠, 星期一至五: 上午9時至下午6時及星期六: 上午9時至下午1時, 每週工作5天半 ', 'industry': '', 'salary': 12000, 'area': '田灣', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:58:02 [jobspider] DEBUG: done:name:5
+2017-12-27 19:58:02 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:58:02 [jobspider] DEBUG: done:company:8
+2017-12-27 19:58:02 [jobspider] DEBUG: done:detail:243
+2017-12-27 19:58:02 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:58:02 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:58:02 [jobspider] DEBUG: done:area:2
+2017-12-27 19:58:02 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:58:02 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:58:02 [jobspider] INFO: save to db :13-17-0039411 PO
+2017-12-27 19:58:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_18']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869296/click {"id": ":wdc:1514375869296", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869296/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869296", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869297/text {"id": ":wdc:1514375869297", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869298/text {"id": ":wdc:1514375869298", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869298/text {"id": ":wdc:1514375869298", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869299/text {"id": ":wdc:1514375869299", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [jobspider] INFO: {'area': '黃竹坑',
+ 'company': '香港防癌會',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 一般院內運送, 清潔及雜務工作; 接收及發放遺體; 殮房清潔, 須於殮房工作 (2年合約, 可續約) (郵寄地址: '
+           '香港黃竹坑南朗山道30號) 資歷： 中三程度; 良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 需搬運物件, '
+           '略懂簡單木工及電器維修優先 待遇： 每月$13,681, 有公眾假期, 約滿酬金, 醫療保險 及每月特別工種津貼$726, '
+           '上午7時至下午7時, 每週工作6天(45小時), 輪班,輪休 ',
+ 'job_id': '13-17-0039407 LA',
+ 'name': '支援服務助理**',
+ 'salary': 13681,
+ 'vacant': '2'}
+2017-12-27 19:58:03 [jobspider] INFO: {'name': '支援服務助理**', 'job_id': '13-17-0039407 LA', 'company': '香港防癌會', 'detail': '職責： 一般院內運送, 清潔及雜務工作; 接收及發放遺體; 殮房清潔, 須於殮房工作 (2年合約, 可續約) (郵寄地址: 香港黃竹坑南朗山道30號) 資歷： 中三程度; 良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 需搬運物件, 略懂簡單木工及電器維修優先 待遇： 每月$13,681, 有公眾假期, 約滿酬金, 醫療保險 及每月特別工種津貼$726, 上午7時至下午7時, 每週工作6天(45小時), 輪班,輪休 ', 'industry': '', 'salary': 13681, 'area': '黃竹坑', 'vacant': '2', 'date_posted': '2017-12-27'}
+2017-12-27 19:58:03 [jobspider] DEBUG: done:name:8
+2017-12-27 19:58:03 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:58:03 [jobspider] DEBUG: done:company:5
+2017-12-27 19:58:03 [jobspider] DEBUG: done:detail:212
+2017-12-27 19:58:03 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:58:03 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:58:03 [jobspider] DEBUG: done:area:3
+2017-12-27 19:58:03 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:58:03 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:58:03 [jobspider] INFO: save to db :13-17-0039407 LA
+2017-12-27 19:58:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_19']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869300/click {"id": ":wdc:1514375869300", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869300/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869300", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869301/text {"id": ":wdc:1514375869301", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869302/text {"id": ":wdc:1514375869302", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869302/text {"id": ":wdc:1514375869302", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869303/text {"id": ":wdc:1514375869303", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [jobspider] INFO: {'area': '鴨脷洲',
+ 'company': '東華三院賽馬會藝進綜合職業復康中心',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 負責餐廳食材預備及食物製作，廚房清潔及衛生 資歷： 小六程度; 1年經驗; 良好粵語; 略懂讀寫中文 待遇： '
+           '每月$16,000 - $18,000, 有牙科福利, 醫療福利 及其他津貼/福利, 星期二至五: 上午7時至下午5時,星期六,日: '
+           '上午7時至下午4時, 每週工作6天,輪班,輪休, 每天工作 9 小時 ',
+ 'job_id': '13-17-0039406 CO',
+ 'name': '廚師 1',
+ 'salary': 16000,
+ 'vacant': '1'}
+2017-12-27 19:58:03 [jobspider] INFO: {'name': '廚師 1', 'job_id': '13-17-0039406 CO', 'company': '東華三院賽馬會藝進綜合職業復康中心', 'detail': '職責： 負責餐廳食材預備及食物製作，廚房清潔及衛生 資歷： 小六程度; 1年經驗; 良好粵語; 略懂讀寫中文 待遇： 每月$16,000 - $18,000, 有牙科福利, 醫療福利 及其他津貼/福利, 星期二至五: 上午7時至下午5時,星期六,日: 上午7時至下午4時, 每週工作6天,輪班,輪休, 每天工作 9 小時 ', 'industry': '', 'salary': 16000, 'area': '鴨脷洲', 'vacant': '1', 'date_posted': '2017-12-27'}
+2017-12-27 19:58:03 [jobspider] DEBUG: done:name:4
+2017-12-27 19:58:03 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:58:03 [jobspider] DEBUG: done:company:17
+2017-12-27 19:58:03 [jobspider] DEBUG: done:detail:161
+2017-12-27 19:58:03 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:58:03 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:58:03 [jobspider] DEBUG: done:area:3
+2017-12-27 19:58:03 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:58:03 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:58:03 [jobspider] INFO: save to db :13-17-0039406 CO
+2017-12-27 19:58:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='uxItemLink_20']/table/tbody/tr/td[2]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869304/click {"id": ":wdc:1514375869304", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869304/elements {"using": "tag name", "value": "span", "id": ":wdc:1514375869304", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxNoOfVac", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869227/text {"id": ":wdc:1514375869227", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxCompany", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869228/text {"id": ":wdc:1514375869228", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869305/text {"id": ":wdc:1514375869305", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxOrdNo", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869229/text {"id": ":wdc:1514375869229", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//div[@id='ctl00_ContentPlaceHolder1_uxJobCard_uxJcard']/table[2]/tbody/tr[5]/td", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869230/text {"id": ":wdc:1514375869230", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869306/text {"id": ":wdc:1514375869306", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869306/text {"id": ":wdc:1514375869306", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869307/text {"id": ":wdc:1514375869307", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "id", "value": "ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869231/text {"id": ":wdc:1514375869231", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [jobspider] INFO: {'area': '黃竹坑',
+ 'company': '香港防癌會',
+ 'date_posted': datetime.date(2017, 12, 27),
+ 'detail': '職責： 一般院內運送, 清潔及雜務工作 (2年合約, 可續約) (郵寄地址: 香港黃竹坑南朗山道30號) 資歷： 中三程度; '
+           '良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 需搬運物件, 略懂簡單木工及電器維修優先 待遇： 每月$13,681, '
+           '有公眾假期, 約滿酬金及醫療保險 , 上午7時至下午7時, 每週工作6天(45小時), 輪班,輪休 ',
+ 'job_id': '13-17-0039405 LA',
+ 'name': '支援服務助理**',
+ 'salary': 13681,
+ 'vacant': '2'}
+2017-12-27 19:58:04 [jobspider] INFO: {'name': '支援服務助理**', 'job_id': '13-17-0039405 LA', 'company': '香港防癌會', 'detail': '職責： 一般院內運送, 清潔及雜務工作 (2年合約, 可續約) (郵寄地址: 香港黃竹坑南朗山道30號) 資歷： 中三程度; 良好粵語; 一般英語; 懂讀寫中文; 懂閱讀英文; 需搬運物件, 略懂簡單木工及電器維修優先 待遇： 每月$13,681, 有公眾假期, 約滿酬金及醫療保險 , 上午7時至下午7時, 每週工作6天(45小時), 輪班,輪休 ', 'industry': '', 'salary': 13681, 'area': '黃竹坑', 'vacant': '2', 'date_posted': '2017-12-27'}
+2017-12-27 19:58:04 [jobspider] DEBUG: done:name:8
+2017-12-27 19:58:04 [jobspider] DEBUG: done:job_id:16
+2017-12-27 19:58:04 [jobspider] DEBUG: done:company:5
+2017-12-27 19:58:04 [jobspider] DEBUG: done:detail:175
+2017-12-27 19:58:04 [jobspider] DEBUG: done:industry:0
+2017-12-27 19:58:04 [jobspider] DEBUG: done:salary:5
+2017-12-27 19:58:04 [jobspider] DEBUG: done:area:3
+2017-12-27 19:58:04 [jobspider] DEBUG: done:vacant:1
+2017-12-27 19:58:04 [jobspider] DEBUG: done:date_posted:10
+2017-12-27 19:58:04 [jobspider] INFO: save to db :13-17-0039405 LA
+2017-12-27 19:58:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple>
+None
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element {"using": "xpath", "value": "//span[@id='ctl00_ContentPlaceHolder1_uxPageNum']/a[6]", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/element/:wdc:1514375869308/attribute/href {"name": "href", "id": ":wdc:1514375869308", "sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [jobspider] DEBUG: http://www1.jobs.gov.hk/1/0/WebForm/jobseeker/jobsearch/quickview.aspx?SearchFor=simple&ID=&SortBy=&from=&start=20
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5/url {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:63712/wd/hub/session/1ede7390-eafd-11e7-8323-c3231010d4b5 {"sessionId": "1ede7390-eafd-11e7-8323-c3231010d4b5"}
+2017-12-27 19:58:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-12-27 19:58:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-12-27 19:58:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 393,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 209784,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 12, 27, 11, 58, 4, 823380),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 936,
+ 'log_count/INFO': 68,
+ 'memusage/max': 59031552,
+ 'memusage/startup': 59031552,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2017, 12, 27, 11, 57, 32, 459832)}
+2017-12-27 19:58:04 [scrapy.core.engine] INFO: Spider closed (finished)
