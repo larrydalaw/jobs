@@ -7,6 +7,14 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.project
+.gitignore
+.DS_Store
+.pydevproject
+log.*
+out*.*
+djob/
+.settings
 .Python
 build/
 develop-eggs/
