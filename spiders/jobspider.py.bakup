@@ -52,10 +52,10 @@ class JobspiderSpider(scrapy.Spider):
         select = Select(driver.find_element_by_id("ctl00_uxSimpLocation"))
         select.select_by_visible_text("--全香港島--")
         driver.find_element_by_id("ctl00_uxSimSearch").click()
-        self.logger.log(logging.INFO, "time" +str(datetime.datetime.now()))
+#        self.logger.log(logging.INFO, "time" +str(datetime.datetime.now()))
         for i in range(0,20):
              joblist = driver.find_element_by_xpath("//div[@id='uxItemLink_"+ str(i+1)+"']/table/tbody/tr/td[2]")
-             self.logger.log(logging.INFO, BeautifulSoup(joblist.get_attribute('innerHTML'), 'lxml'))
+#             self.logger.log(logging.INFO, BeautifulSoup(joblist.get_attribute('innerHTML'), 'lxml'))
              joblist.click()
              jobselems = joblist.find_elements_by_tag_name("span")
              for j in jobselems:
@@ -70,7 +70,7 @@ class JobspiderSpider(scrapy.Spider):
              job ['salary'] = jobselems[1].text
              job ['area'] = jobselems[2].text
              job ['date_posted'] = driver.find_element_by_id("ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate").text
-             self.logger.log(logging.INFO, job)
+#             self.logger.log(logging.INFO, job)
              yield job
 
 
@@ -81,7 +81,7 @@ class JobspiderSpider(scrapy.Spider):
         while True:
             count+=1
             if count >20 :
-                self.logger.log(logging.INFO, "time out")
+#                self.logger.log(logging.INFO, "time out")
                 return
             time.sleep(.5)
             try:
@@ -109,7 +109,7 @@ class JobspiderSpider(scrapy.Spider):
             
             
             job_js = "javascript:("+ js_getJobCardDetail+")"
-            self.logger.log(logging.INFO, job_js)
+#            self.logger.log(logging.INFO, job_js)
 
 
             pass
@@ -117,7 +117,7 @@ class JobspiderSpider(scrapy.Spider):
         
     
     def movie_page_url(self,response):
-        '''    self.logger.log(logging.INFO, response.url)
+#        '''    self.logger.log(logging.INFO, response.url)
         max_num = BeautifulSoup(response.text,'lxml').find('div',class_='paginator').find_all('a')[-2].get_text()
         for i in range(0,int(max_num)):
         page_url = response.url+'?start='+str(i*20)+'&type=T'  #https://movie.douban.com/tag/%E7%88%B1%E6%83%85?start=7840&type=T

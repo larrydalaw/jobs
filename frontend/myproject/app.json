@@ -1,0 +1,15 @@
+{
+  "name": "Frango",
+  "description": "Frango - A FRontend and backend djANGO project template",
+  "repository": "https://github.com/hersonls/frango",
+  "logo": "https://cdn.rawgit.com/hersonls/frango/master/frontend/static/images/icon.svg",
+  "keywords": ["python", "django", "frontend", "node", "javascript", "babel"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "DISABLE_COLLECTSTATIC": "1" 
+  }
+}

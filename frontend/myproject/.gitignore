@@ -1,0 +1,73 @@
+*.py[cod]
+*~
+*.swp
+*.pid
+.env
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+eggs
+parts
+bin
+var
+sdist
+develop-eggs .installed.cfg
+lib
+lib64
+
+# PyCharm
+.idea/*
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+*.sql
+*.tar.gz
+
+# Static
+media
+
+# Settigns
+local_settings.py
+
+# SQLite
+*.db
+*.sqlite
+etc/thumbor.local.conf
+.DS_Store
+
+celery
+
+# Nodejs
+npm-debug.log
+node_modules/
+package-lock.json
+
+.gz
+.dump
+.sql
+.sass-cache
+*.pyc
+
+node_modules
+.tmp
+tmp
+bower_components
+
+# Django
+*.sqlite3

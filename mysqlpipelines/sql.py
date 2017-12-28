@@ -74,15 +74,19 @@ class Sql:
             'vacant': vacant,
             'date_posted': date_posted.isoformat()
         }
-        spider.logger.info(value)
+#        spider.logger.info(value)
+#        spider.LAW_LOG.append(value)
         try:
             cur.execute(sql, value)
             cnx.commit()
             for key,v in value.items():
                 spider.logger.debug("done:"+key+":"+str(len(str(v))))
+#                spider.LAW_LOG.append("done:"+key+":"+str(len(str(v))))
         except:
+            pass
             for key,v in value.items():
                 spider.logger.debug("error:"+key+":"+str(len(str(v))))
+#                spider.LAW_LOG.append("error:"+key+":"+str(len(str(v))))
 
         
 

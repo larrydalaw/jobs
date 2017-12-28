@@ -14,13 +14,14 @@ from scrapy.exceptions import DropItem
 class JobsPipeline(object):
 
     def process_item(self, item, spider):
-        print("in pipeline")
+        spider.logger.info("in pipeline")
         #deferToThread(self._process_item, item, spider)
         if isinstance(item, JobsItem):
             job_id = item['job_id']
             ret = Sql.select_id(job_id)
             if ret[0] == 1:
-                spider.logger.info('dup item :' + job_id)
+#                spider.logger.info('dup item :' + job_id)
+#                spider.LAW_LOG.append('dup item :' + job_id)
                 raise DropItem("dup item in %s" % item)
             else:
                 name = item['name']
@@ -34,3 +35,4 @@ class JobsPipeline(object):
 #(cls, name,job_id, company, detail, industry,salary,area,vacant,date_posted):
                 (Sql.insert_jobs(spider,name, job_id, company, detail,'',salary,area,vacant,date_posted))
                 spider.logger.info('save to db :' + job_id)
+#                spider.LAW_LOG.append('save to db :' + job_id)

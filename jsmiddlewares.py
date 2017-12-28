@@ -13,8 +13,9 @@ class SeleniumMiddleware(object):
         return middleware
 
     def process_request(self, request, spider):
-        spider.logger.debug("==\\\\]]]")
-        if 'JS' in request.meta:
+#        spider.logger.debug("==\\\\]]]")
+#        spider.LAW_LOG.append("==\\\\]]]")
+    #    if 'JS' in request.meta:
 
             request.meta['driver'] = spider.driver  # to access driver from response
             spider.driver.get(request.url)

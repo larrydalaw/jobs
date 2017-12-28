@@ -10,6 +10,7 @@ from jobs.items import JobsItem ##这是我定义的需要保存的字段，（�
 from jobs.mysqlpipelines.sql import Sql#sql connection
 import time
 import datetime 
+from urllib.parse import urlencode
 #from scrapy.log import logger
 from time import strftime
 from datetime import timedelta
@@ -34,9 +35,9 @@ if not hxs.select('//get/site/logo'):
     name = 'jobspider'
     driver = None
     jobcount=0 
-    jobpcount=0
-    
-    urldata = "&ID=&SortBy=&from=&start="+str(jobcount)
+#    jobpcount=0
+#    LAW_LOG=[]
+#    urldata = "&ID=&SortBy=&from=&start="+str(jobcount)
     urlpdata = "&ID=&SortBy=&from=&start="
     @classmethod
     def update_jobcount(cls, jc):
@@ -44,9 +45,9 @@ if not hxs.select('//get/site/logo'):
     @classmethod
     def get_jobcount(cls):
         return JobspiderSpider.jobcount
-    @classmethod
-    def get_urldata(cls):
-        return JobspiderSpider.urldata    
+   # @classmethod
+ #   def get_urldata(cls):
+  #      return JobspiderSpider.urldata    
     def __init__(self, *args, **kwargs):
         self.driver = webdriver.PhantomJS(executable_path='/usr/local/lib/node_modules/phantomjs-prebuilt/bin/phantomjs')
     
@@ -78,7 +79,8 @@ if not hxs.select('//get/site/logo'):
         
         
     def parse_front (self, response):
-        self.logger.info(self.driver.current_url)
+#        self.logger.info(self.driver.current_url)
+#        self.LAW_LOG.append(self.driver.current_url)
         select = Select(self.driver.find_element_by_id("ctl00_uxSimpLocation"))
         select.select_by_visible_text("--全香港島--")
         self.driver.find_element_by_id("ctl00_uxSimSearch").click()
@@ -88,7 +90,7 @@ if not hxs.select('//get/site/logo'):
         
         for i in range(0,20):
             
-             joblist = self.driver.find_element_by_xpath("//div[@id='uxItemLink_"+ str(i+1)+"']/table/tbody/tr/td[2]")
+             joblist = self.driver.find_element_by_xpath("//div[@id='uxItemLink_"+ str(i+1+JobspiderSpider.get_jobcount())+"']/table/tbody/tr/td[2]")
              joblist.click()
              jobselems = joblist.find_elements_by_tag_name("span")
              job =JobsItem()
@@ -111,22 +113,39 @@ if not hxs.select('//get/site/logo'):
                  job['salary'] = int(jobselems[1].text[1:3].replace(',',''))
              job ['area'] = jobselems[2].text
              pdate = self.driver.find_element_by_id("ctl00_ContentPlaceHolder1_uxJobCard_uxPostedDate").text
+             self.logger.debug(pdate)
              job ['date_posted'] = date(int(pdate.split('/')[2]),int(pdate.split('/')[1]),int( pdate.split('/')[0]))
-             self.logger.info(job)
+#             self.logger.info(job)
+#             self.LAW_LOG.append(job)
              yield (job)
         JobspiderSpider.update_jobcount(JobspiderSpider.get_jobcount()+20)
         nexturl=None
-        try:
-            nexturl = self.driver.find_element_by_xpath("//span[@id='ctl00_ContentPlaceHolder1_uxPageNum']/a[6]").get_attribute('href')
-            self.logger.debug(nexturl +": expected partial")
-            nexturl=self.driver.current_url +self.get_urlpdata()+str(JobspiderSpider.get_jobcount())
-            self.logger.debug(nexturl + ": expected with no")
-            yield Request(nexturl, dont_filter=False,callback=self.parse_list)
-        except:
-            self.driver.quit()
-            pass
-        
+   #     try:
+        nexturl = self.driver.find_element_by_xpath("//span[@id='ctl00_ContentPlaceHolder1_uxPageNum']/a[6]").get_attribute('href')
+        self.logger.debug(nexturl +": expected partial")
+#        self.LAW_LOG.append(nexturl +": expected partial")
+        pos = nexturl.find('?')
+        if pos > -1:
+            nexturl = nexturl[:pos]
+            self.logger.debug(nexturl + ": processed")
 
+        qsdict = {'SearchFor':'simple',
+                'ID':'',
+                'SortBy':'',
+                'from':'',
+                'start':str(JobspiderSpider.get_jobcount())} 
+        qs = urlencode(qsdict)
+        request = Request(nexturl+ '?' +qs, 
+                      dont_filter=False,
+                      callback=self.parse_list)      
+        yield request
+                  
+        
+  #      except Exception as err:
+            
+   #         self.driver.quit()
+  #          raise err
+##        self.logger.info(self.LAW_LOG)
         
 
            
