@@ -115,7 +115,7 @@ MYSQL_HOSTS = '127.0.0.1'
 MYSQL_USER = 'pandalaw'
 MYSQL_PASSWORD = 'LL456852samysql'
 MYSQL_PORT = '3306'
-MYSQL_DB = 'jobs'
+MYSQL_DB = 'fs'
 RANDOM_UA_PER_PROXY=True
 USER_AGENTS = [
     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",

@@ -41,7 +41,7 @@ class Sql:
     '''
     @classmethod
     def insert_jobs(cls, name, job_id, company):
-        sql = 'INSERT INTO job (`name`, `job_id`, `company`) VALUES (%(name)s,  %(job_id)s, %(company)s)'
+        sql = 'INSERT into jobs (`name`, `job_id`, `company`) VALUES (%(name)s,  %(job_id)s, %(company)s)'
         value = {
             'name': name,
             'job_id': job_id,
@@ -52,7 +52,7 @@ class Sql:
 '''
     @classmethod
     def select_id(cls, job_id):
-        sql = "SELECT EXISTS(SELECT 1 FROM job WHERE job_id=%(job_id)s)"
+        sql = "SELECT EXISTS(SELECT 1 from jobs WHERE job_id=%(job_id)s)"
         value = {
             'job_id': job_id
         }
@@ -61,7 +61,7 @@ class Sql:
 
     @classmethod
     def insert_jobs(cls,spider, name,job_id, company, detail, industry,salary,area,vacant,date_posted):
-        sql = 'INSERT INTO job (`theversion`,`name`,`job_id`, `company`, `detail`, `industry`,`salaryfrom`,`area`,`vacant`,`date_posted`) VALUES (1,%(name)s,%(job_id)s, %(company)s, %(detail)s, %(industry)s,%(salary)s, %(area)s, %(vacant)s, %(date_posted)s)'
+        sql = 'INSERT into jobs (`theversion`,`name`,`job_id`, `company`, `detail`, `industry`,`salaryfrom`,`area`,`vacant`,`date_posted`) VALUES (1,%(name)s,%(job_id)s, %(company)s, %(detail)s, %(industry)s,%(salary)s, %(area)s, %(vacant)s, %(date_posted)s)'
         
         value = {
             'name': name,
@@ -93,7 +93,7 @@ class Sql:
 
     @classmethod
     def select_name(cls, name_id):
-        sql = "SELECT EXISTS(SELECT 1 FROM job WHERE name=%(name)s)"
+        sql = "SELECT EXISTS(SELECT 1 from jobs WHERE name=%(name)s)"
         value = {
             'name': name_id
         }
